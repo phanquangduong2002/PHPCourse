@@ -19,11 +19,13 @@ echo "Super globals in PHP <br>";
 //     echo $_GET['email'] . "<br>";
 // }
 
-$name = htmlspecialchars($_POST['name']) ?? '';
-$age = htmlspecialchars($_POST['age']) ?? '';
-$email = htmlspecialchars($_POST['email']) ?? '';
+if (isset($_POST['submit'])) {
+    $name = htmlspecialchars($_POST['name']) ?? '';
+    $age = htmlspecialchars($_POST['age']) ?? '';
+    $email = htmlspecialchars($_POST['email']) ?? '';
 
-echo $name;
+    echo $name . " " . $age . " " . $email;
+}
 
 ?>
 
