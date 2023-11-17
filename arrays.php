@@ -54,6 +54,6 @@ $persons = [
     ]
 ];
 
-// print_r($persons);
+print_r($persons);
 
-var_dump(json_encode($person));
+// var_dump(json_encode($person));
